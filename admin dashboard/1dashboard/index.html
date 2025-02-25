@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ADMIN DASHBOARD</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 navbar-border" id="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="rk_school-removebg-preview.png" alt="Logo" width="100" height="75">
+            </a>
+            <span class="navbar-text fw-bold ms-2" style="font-size: 1.5rem;">ROSS UNIVERSITY</span>
+
+            <div class="ms-auto d-flex align-items-center">
+
+                <div class="text-end me-2">
+                    <span class="fw-bold">Hey, Karan</span>
+                    <span class="admin-text">Admin</span>
+                </div>
+                <img src="rk_school-removebg-preview.png" alt="Profile" class="profile-icon" id="profileIcon">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- sidebar -->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+            <a href="http://127.0.0.1:3000/1dashboard/index.html">Dashboard</a>
+            <a href="http://127.0.0.1:3000/2userspage/index.html">Users</a>
+            <a href="http://127.0.0.1:3000/3settingspage/index.html">Settings</a>
+            <a href="http://127.0.0.1:3000/4login/loginpage/index.html">Login</a>
+
+        </div>
+
+        <!-- analytics -->
+        <div class="container">
+            <h1 class="analytics-header">Analytics</h1>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <h5>Total Enrollments</h5>
+                        <div class="stats-value">500</div>
+                        <div class="progress-ring progress-positive">+50%</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <h5>Site Visit</h5>
+                        <div class="stats-value">2500</div>
+                        <div class="progress-ring progress-positive">+27%</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <h5>Online Searches</h5>
+                        <div class="stats-value">3900</div>
+                        <div class="progress-ring progress-positive">+31%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- new users -->
+        <div class="new-users p-3 mt-4">
+            <h4>New Enrolled Students</h4>
+            <div class="row text-center">
+                <div class="col-md-3 user-card">
+                    <img src="https://up.yimg.com/ib/th?id=OIP.5F3SyVGz57QTefASUtBtpgHaHa&pid=Api&rs=1&c=1&qlt=95&w=123&h=123"
+                        alt="Jack" height="150px">
+                    <h6>Jack</h6>
+                    <p>54 Min Ago</p>
+                </div>
+                <div class="col-md-3 user-card">
+                    <img src="https://up.yimg.com/ib/th?id=OIP.nn5qeVo4_6lTRbDz5BRGowHaHk&pid=Api&rs=1&c=1&qlt=95&w=101&h=104"
+                        alt="Amir" height="150px">
+                    <h6>Amir</h6>
+                    <p>3 Hours Ago</p>
+                </div>
+                <div class="col-md-3 user-card">
+                    <h6>Ember</h6>
+                    <img src="https://up.yimg.com/ib/th?id=OIP.QCNMuZp-ybhD2Aalq6V8rwHaL8&pid=Api&rs=1&c=1&qlt=95&w=70&h=113"
+                        alt="Ember" height="150px">
+                    <p>6 Hours Ago</p>
+                </div>
+                <div class="col-md-3 user-card">
+                    <span class="add-icon">+</span>
+                    <h6>More</h6>
+                    <p>New User</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <h1 class="analytics-header">Analytics</h1>
+            <div class="recent-orders p-3 mt-4">
+                <h4>Recent Orders</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Course Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>JavaScript Tutorial</td>
+                            <td>85743</td>
+                            <td>Due</td>
+                            <td class="status-pending">Pending</td>
+                            <td><a href="#">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>CSS Full Course</td>
+                            <td>97245</td>
+                            <td>Refunded</td>
+                            <td class="status-declined">Declined</td>
+                            <td><a href="#">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Flex-Box Tutorial</td>
+                            <td>36452</td>
+                            <td>Paid</td>
+                            <td class="status-active">Active</td>
+                            <td><a href="#">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>C Tutorial</td>
+                            <td>25648</td>
+                            <td>Paid</td>
+                            <td class="status-active">Active</td>
+                            <td><a href="#">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>R Language Tutorial</td>
+                            <td>26548</td>
+                            <td>Paid</td>
+                            <td class="status-active">Active</td>
+                            <td><a href="#">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Python Tutorial</td>
+                            <td>14789</td>
+                            <td>Due</td>
+                            <td class="status-active">Active</td>
+                            <td><a href="#">Details</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="orders.js"></script>
+</body>
+
+</html>
